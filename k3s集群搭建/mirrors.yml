@@ -1,0 +1,11 @@
+mirrors:
+  docker.io:
+    endpoint:
+      - "https://192.168.64.12:8080"
+    rewrite:
+      "^rancher/(.*)": "192.168.64.12:8080/$1"
+configs:
+  "192.168.64.12:8080":
+    auth:
+      username: admin
+      password: Harbor12345
